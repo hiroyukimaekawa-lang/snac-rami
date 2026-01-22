@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>スナック蘭美｜相模原・青葉のアットホームなスナック</title>
   <meta name="description" content="神奈川県相模原市青葉のスナック蘭美。落ち着いた和モダンの空間で、初めての方でも安心してくつろげる大人の時間を。電話予約・お問い合わせは 042-704-8652。">
   <meta name="format-detection" content="telephone=no">
-  
+
   <!-- OGP -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="スナック蘭美">
   <meta property="og:description" content="一見でも安心、和モダンで落ち着いたスナック。相模原・青葉。TEL 042-704-8652">
-  <meta property="og:image" content="https://drive.google.com/uc?export=view&id=HERO_IMAGE_ID">
-  
+  <meta property="og:image" content="img/store.jpg">
+
   <!-- 構造化データ -->
   <script type="application/ld+json">
   {
@@ -28,7 +29,7 @@
     },
     "telephone": "+81-42-704-8652",
     "url": "https://example.com/",
-    "image": "https://drive.google.com/uc?export=view&id=HERO_IMAGE_ID",
+    "image": "img/store.jpg",
     "servesCuisine": "スナック",
     "openingHoursSpecification": [
       {"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday","Sunday"],"opens":"12:00","closes":"17:00"},
@@ -40,14 +41,15 @@
     ]
   }
   </script>
-  
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <!-- モバイル固定CTA -->
   <a class="call-cta" href="tel:0427048652" aria-label="電話する 042-704-8652">
     <span class="call-icon">📞</span>
-    <span class="call-text">042-704-8652</span>
+    <span>042-704-8652</span>
   </a>
 
   <!-- ヘッダー -->
@@ -56,10 +58,16 @@
       <a href="#" class="logo">
         <span class="logo-text">スナック蘭美</span>
       </a>
+      <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav class="nav">
-        <a href="#concept">想い</a>
+        <a href="#overview">店舗概要</a>
+        <a href="#features">特徴</a>
+        <a href="#gallery">店内</a>
         <a href="#info">ご案内</a>
-        <a href="#space">店内</a>
         <a href="#access">アクセス</a>
         <a class="tel-link" href="tel:0427048652">042-704-8652</a>
       </nav>
@@ -69,138 +77,194 @@
   <main>
     <!-- HERO -->
     <section class="hero" aria-label="メインビジュアル">
-      <picture>
-        <img src="https://drive.google.com/uc?export=view&id=HERO_IMAGE_ID"
-             alt="落ち着いた和モダンの店内の雰囲気" loading="eager" decoding="async">
-      </picture>
+      <div class="hero-bg">
+        <img src="img/store.jpg" alt="スナック蘭美の店内" loading="eager">
+      </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <h1>スナック蘭美</h1>
-        <p class="catch">静かに語らう、大人のくつろぎ</p>
-        <a class="hero-call" href="tel:0427048652" aria-label="スナック蘭美に電話 042-704-8652">お電話予約・お問い合わせ</a>
+        <p class="hero-subtitle">SNACK RANBI</p>
+        <h1 class="hero-title">スナック蘭美</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-desc">
+          静かに語らう、大人のくつろぎ<br>
+          初めての方でも安心してお楽しみいただける<br>
+          アットホームな空間
+        </p>
+        <a class="hero-cta" href="tel:0427048652" aria-label="スナック蘭美に電話 042-704-8652">
+          <span>📞</span>
+          <span>お電話予約・お問い合わせ</span>
+        </a>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <span>↓</span>
       </div>
     </section>
 
-    <!-- CONCEPT -->
-    <section id="concept" class="section reveal" aria-labelledby="concept-title">
+    <!-- OVERVIEW (店舗概要) -->
+    <section id="overview" class="section section-dark reveal" aria-labelledby="overview-title">
       <div class="container">
-        <h2 id="concept-title" class="sec-title">CONCEPT<span class="sub-title">想い</span></h2>
-        <div class="concept-grid">
-          <div class="concept-text">
-            <p class="lead">
-              スナック蘭美は、初めての方でも肩肘張らずに過ごせる、落ち着いた和モダンの空間です。
+        <header class="section-header">
+          <span class="section-label">Overview</span>
+          <h2 id="overview-title" class="section-title">店舗概要</h2>
+          <div class="section-divider"></div>
+        </header>
+
+        <div class="overview-grid">
+          <div class="overview-content">
+            <p class="overview-lead">
+              一見さんでも肩肘張らずに<br>
+              過ごせる落ち着いた空間
             </p>
-            <p>
-              ほどよい距離感と温かいおもてなしで、幅広い年代の皆さまに安心してお楽しみいただけます。
-              過度な演出はせず、会話と時間をゆっくり味わえる、アットホームな雰囲気を大切にしています。
+            <p class="overview-text">
+              スナック蘭美は、初めての方でも安心してお楽しみいただける、アットホームな雰囲気のスナックです。
+              ほどよい距離感と温かいおもてなしで、幅広い年代の皆さまにご愛顧いただいております。
             </p>
-            <p class="note">
+            <p class="overview-text">
+              過度な演出はせず、会話と時間をゆっくり味わえる空間を大切にしています。
+              お一人様でもグループでも、気軽にお立ち寄りください。
+            </p>
+            <p class="overview-note">
               ※ 20歳未満の方のご入室はご遠慮いただいております。
             </p>
           </div>
-          <div class="concept-image">
-            <img src="https://drive.google.com/uc?export=view&id=SUB_IMAGE_01_ID"
-                 alt="穏やかな照明のカウンター席" loading="lazy" width="640" height="420">
+          <div class="overview-image">
+            <img src="img/store1.jpg" alt="カウンターとボトル棚" loading="lazy">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- INFORMATION -->
-    <section id="info" class="section section-alt reveal" aria-labelledby="info-title">
+    <!-- FEATURES (特徴) -->
+    <section id="features" class="section features-section reveal" aria-labelledby="features-title">
       <div class="container">
-        <h2 id="info-title" class="sec-title">INFORMATION<span class="sub-title">ご案内</span></h2>
+        <header class="section-header">
+          <span class="section-label">Features</span>
+          <h2 id="features-title" class="section-title">当店の特徴</h2>
+          <div class="section-divider"></div>
+        </header>
 
-        <div class="info-cards">
-          <article class="card">
-            <h3>営業時間</h3>
-            <ul class="hours">
-              <li>
-                <span class="day">金・土・日</span>
-                <span class="time">12:00〜17:00</span>
-              </li>
-              <li>
-                <span class="day">月（成人の日）</span>
-                <span class="time">17:00〜22:00 <small>※時間変更の可能性あり</small></span>
-              </li>
-              <li>
-                <span class="day">火</span>
-                <span class="time">17:00〜22:00</span>
-              </li>
-            </ul>
-            <div class="closed">
-              <strong>定休日</strong>
-              <p>水曜日・木曜日</p>
-            </div>
+        <div class="features-grid">
+          <article class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon">🎤</div>
+            <h3 class="feature-title">カラオケ完備</h3>
+            <p class="feature-desc">最新のDAMを完備。お好きな曲をお楽しみください。</p>
           </article>
 
-          <article class="card">
-            <h3>お問い合わせ</h3>
-            <p class="tel-line">
-              <a href="tel:0427048652" aria-label="電話 042-704-8652">TEL：042-704-8652</a>
-            </p>
-            <p class="desc">混雑時はお電話に出られないことがございます。恐れ入りますが、時間をおいておかけ直しください。</p>
+          <article class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon">🍶</div>
+            <h3 class="feature-title">豊富なドリンク</h3>
+            <p class="feature-desc">焼酎、ウイスキー、カクテルなど多彩なお酒をご用意。</p>
           </article>
 
-          <article class="card">
-            <h3>アクセス</h3>
-            <ul class="access-list">
-              <li>〒252-0224<br>神奈川県相模原市中央区青葉１丁目１−６</li>
-              <li>駐車場：1台あり</li>
-              <li>JR「淵野辺駅」よりタクシーで約10分</li>
-            </ul>
+          <article class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon">🚗</div>
+            <h3 class="feature-title">駐車場あり</h3>
+            <p class="feature-desc">店舗前に1台分の駐車スペース完備。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- SPACE -->
-    <section id="space" class="section reveal" aria-labelledby="space-title">
+    <!-- GALLERY (店内) -->
+    <section id="gallery" class="gallery-section reveal" aria-labelledby="gallery-title">
       <div class="container">
-        <h2 id="space-title" class="sec-title">SPACE<span class="sub-title">店内の雰囲気</span></h2>
-        <p class="section-lead">落ち着いた夜の空気感をお届けします。</p>
-        <div class="gallery">
+        <header class="section-header">
+          <span class="section-label">Gallery</span>
+          <h2 id="gallery-title" class="section-title">店内の雰囲気</h2>
+          <div class="section-divider"></div>
+        </header>
+
+        <div class="gallery-grid">
           <figure class="gallery-item">
-            <img src="https://drive.google.com/uc?export=view&id=SUB_IMAGE_02_ID" alt="カウンターのボトル棚" loading="lazy">
+            <img src="img/store.jpg" alt="カウンター席全景" loading="lazy">
           </figure>
           <figure class="gallery-item">
-            <img src="https://drive.google.com/uc?export=view&id=SUB_IMAGE_03_ID" alt="落ち着いたテーブル席" loading="lazy">
+            <img src="img/store1.jpg" alt="ボトル棚とモニター" loading="lazy">
           </figure>
           <figure class="gallery-item">
-            <img src="https://drive.google.com/uc?export=view&id=SUB_IMAGE_04_ID" alt="やわらかな灯り" loading="lazy">
+            <img src="img/store2.jpg" alt="店内のインテリア" loading="lazy">
           </figure>
-          <figure class="gallery-item">
-            <img src="https://drive.google.com/uc?export=view&id=SUB_IMAGE_05_ID" alt="入口側の様子" loading="lazy">
-          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFORMATION (店舗情報) -->
+    <section id="info" class="section info-section reveal" aria-labelledby="info-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Information</span>
+          <h2 id="info-title" class="section-title">ご案内</h2>
+          <div class="section-divider"></div>
+        </header>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <h3 class="info-card-title">営業時間</h3>
+            <ul class="hours-list">
+              <li>
+                <span class="hours-day">金・土・日</span>
+                <span class="hours-time">12:00〜17:00</span>
+              </li>
+              <li>
+                <span class="hours-day">月（成人の日）</span>
+                <span class="hours-time">
+                  17:00〜22:00
+                  <small class="hours-note">※時間変更の可能性あり</small>
+                </span>
+              </li>
+              <li>
+                <span class="hours-day">火曜日</span>
+                <span class="hours-time">17:00〜22:00</span>
+              </li>
+            </ul>
+            <div class="closed-info">
+              <p class="closed-label">定休日</p>
+              <p class="closed-days">水曜日・木曜日</p>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <h3 class="info-card-title">お問い合わせ</h3>
+            <a class="contact-tel" href="tel:0427048652" aria-label="電話 042-704-8652">
+              TEL：042-704-8652
+            </a>
+            <p class="contact-note">
+              混雑時はお電話に出られないことがございます。<br>
+              恐れ入りますが、時間をおいておかけ直しください。
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- ACCESS -->
-    <section id="access" class="section section-alt reveal" aria-labelledby="access-title">
+    <section id="access" class="section access-section reveal" aria-labelledby="access-title">
       <div class="container">
-        <h2 id="access-title" class="sec-title">ACCESS<span class="sub-title">アクセス</span></h2>
+        <header class="section-header">
+          <span class="section-label">Access</span>
+          <h2 id="access-title" class="section-title">アクセス</h2>
+          <div class="section-divider"></div>
+        </header>
 
         <div class="access-grid">
-          <div class="access-text">
-            <h3 class="sr-only">所在地・交通</h3>
-            <p class="address">
+          <div class="access-info">
+            <h3 class="access-store-name">スナック蘭美</h3>
+            <p class="access-address">
               〒252-0224<br>
               神奈川県相模原市中央区青葉１丁目１−６
             </p>
-            <ul class="access-notes">
+            <ul class="access-list">
               <li>駐車場：店舗前に1台あり</li>
               <li>JR「淵野辺駅」よりタクシーで約10分</li>
             </ul>
-            <p class="cta-inline">
-              <a class="btn" href="tel:0427048652">お電話で問い合わせる</a>
-            </p>
+            <a class="access-cta" href="tel:0427048652">
+              <span>📞</span>
+              <span>お電話で問い合わせる</span>
+            </a>
           </div>
-          <div class="map">
-            <iframe
-              title="スナック蘭美 アクセス地図"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+          <div class="map-container">
+            <iframe title="スナック蘭美 アクセス地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps?q=神奈川県相模原市中央区青葉１丁目１−６&output=embed">
             </iframe>
           </div>
@@ -212,14 +276,17 @@
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="f-brand">
-          <strong class="name">スナック蘭美</strong>
-          <p class="addr">〒252-0224 神奈川県相模原市中央区青葉１丁目１−６</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">スナック蘭美</span>
+          <p class="footer-address">
+            〒252-0224<br>
+            神奈川県相模原市中央区青葉１丁目１−６
+          </p>
         </div>
-        <div class="f-contact">
-          <a class="tel-footer" href="tel:0427048652">TEL：042-704-8652</a>
-          <p class="small">© Snack Ranbi. All rights reserved.</p>
+        <div class="footer-contact">
+          <a class="footer-tel" href="tel:0427048652">TEL：042-704-8652</a>
+          <p class="footer-copyright">© Snack Ranbi. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -227,4 +294,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
